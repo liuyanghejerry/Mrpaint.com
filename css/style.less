@@ -1,0 +1,401 @@
+@import "common";
+
+/*	Less Framework 4  */
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+a, a:visited {text-decoration:none;}
+
+ul, ol {
+	margin: 0.5em 0 1.5em 1.5em;
+	padding-left: 20px;
+}
+
+code {
+  background-color: #EEEEEE;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 42px;
+	line-height: 48px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 16px/24px Georgia, serif;
+	font-family: "微软雅黑", "宋体";
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: @selection_color; color: @selection_text_color;}
+::-moz-selection 	{background: @selection_color; color: @selection_text_color;}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: @selection_color;}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	width: 896px;
+	margin: auto;
+	padding: 72px 0 0 0;
+	background-image: @bg_pic;
+	background-repeat: repeat repeat;
+	background-attachment: fixed;
+	background-color: @main_bg_color;
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+/* Style */
+
+ul {
+	list-style: circle;
+	
+}
+
+#header {
+	h1, #site-title-a {
+		width: 250px;
+		margin-bottom: 20px;
+		color: @title_color;
+		#version-sup {
+			/*color: @h_color;*/
+			margin: 2px;
+			font-size: 12px;
+		}
+	}
+	h3 {
+		width: 300px;
+		color: @h_color;
+	}
+}
+
+#header-nav {
+	margin: 20px 0 0 0;
+	font-size: 20px;
+	float: right;
+	list-style: none;
+	position: relative;
+	left: 0;
+	top: 0;
+	li { 
+		float: left;
+		display: block;
+	}
+	a {
+		margin: 3px 10px;
+		padding: 5px 13px;
+		color: @nav_font_color;
+		.rounded-corners(9px);
+		background-color: @title_color;
+		.link-transition();
+	}
+	a:hover {
+		background-color: @h_color;
+		.link-transition();
+	}
+}
+
+#wrapper {
+	width:100%;
+}
+
+#container {
+	width: 100%;
+	margin-top: 50px;
+	color: @text_color;
+	#screen-shot {
+		float: right;
+		position: relative;
+		top: -10px;
+		left: 0;
+		padding:1px;
+		img {
+			/*.img-box-shadow();*/
+			border: 10px solid @image_border_color;
+			.rounded-corners();
+			.img-transition();
+		}
+		img:hover {
+			border: 10px solid @image_hover_border_color;
+			.img-transition();
+		}
+	}
+	.article {
+		margin-bottom: 30px;
+		h2 {
+			margin: 10px 0 10px 0;
+		}
+		a {
+			color: @article_link_color;
+		}
+		a:hover {
+			color: @article_hover_link_color;
+		}
+		a:visited {
+			color: @article_visited_link_color;
+		}
+		.date {
+			font-size: 12px;
+			margin: 0;
+			text-align: right;
+			span {
+				font-style: italic;
+				background: hsl(0, 0%, 91%); 
+			}
+		}
+		.inner-ul {
+			margin: 0;
+		}
+	}
+}
+
+#share-wrapper {
+	margin-top: 10px;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+.dialog {
+	display: none;
+	min-width: 350px;
+	padding: 20px 30px 50px 30px;
+	.rounded-corners(5px);
+	background: white;
+	color: @h_color;
+	border: 10px solid  @main_bg_color;
+	h3 {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	p {
+		margin: auto;
+	}
+	.dialog-close {
+		float: right;
+		font-size: 20px;
+	}
+}
+
+#footer {
+	clear: both;
+	border-top: 1px solid hsl(347, 17%, 84%);
+	color: hsl(38, 8%, 52%);
+	span {
+		font-size: 12px;
+		float: right;
+	}
+}
+
+#survey {
+	display:none;
+}
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	body {
+		width: 712px;
+		padding: 48px 28px 60px;
+	}
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	body {
+		width: 252px;
+		padding: 0px 34px 60px;
+	}
+	
+	#header {
+		text-align: center;
+		h1 {
+			width: 300px;
+			margin: 30px auto 0;
+		}
+		
+		h3 {
+			width: 300px;
+			margin: 0px auto 0;
+		}
+	
+	}
+	
+	#header-nav {
+		position: relative;
+		margin-top: 0px 0 0 0;
+		font-size: 17px;
+		background-color: @title_color;
+		.rounded-corners();
+		a {
+			margin: 0;
+			background-color: transparent;
+		}
+	}
+	
+	#screen-shot {
+		img {
+			width: 250px;
+			clear: both;
+		}
+	}
+	
+	.dialog {
+		min-width: 250px;
+		max-width: 250px;
+		.dialog-close {
+			font-size: 35px;
+		}
+	}
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+		width: 470px;
+		padding: 36px 22px 48px;
+	}
+	
+	#header {
+		text-align: center;
+		h1 {
+			width: 300px;
+			margin: 30px auto 0;
+		}
+		
+		h3 {
+			width: 300px;
+			margin: 0px auto 0;
+		}
+	
+	}
+	
+	#header-nav {
+		position: relative;
+		margin-top: 0px 0 0 0;
+		font-size: 17px;
+		background-color: @title_color;
+		.rounded-corners();
+		a {
+			margin: 0;
+			background-color: transparent;
+		}
+	}
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+	
+	}
+	
+}
+

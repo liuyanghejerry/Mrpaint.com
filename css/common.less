@@ -1,0 +1,60 @@
+/*  Global defination */
+
+@selection_color: black;
+@selection_text_color: white;
+@main_bg_color: hsl(52, 72%, 81%);
+@bg_pic: url(../images/plaid.png);
+@title_color: hsl(175, 100%, 20%);
+@h_color: hsl(35, 90%, 34%);
+@nav_font_color: white;
+@text_color: hsl(20, 12%, 29%);
+@image_border_color: @title_color;
+@image_hover_border_color: @h_color;
+@article_link_color: @h_color;
+@article_hover_link_color: @title_color;
+@article_visited_link_color: @article_hover_link_color;
+
+.rounded-corners (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius; 
+}
+
+.link-transition (@duration: 0.3s) {
+	transition-property: color, background;
+	transition-duration: @duration, @duration;
+	transition-timing-function: linear, ease-in;
+	-webkit-transition-property: color, background;
+	-webkit-transition-duration: @duration, @duration;
+	-webkit-transition-timing-function: linear, ease-in;
+	-o-transition-property: color, background;
+	-o-transition-duration: @duration, @duration;
+	-o-transition-timing-function: linear, ease-in;
+	-moz-transition-property: color, background;
+	-moz-transition-duration: @duration, @duration;
+	-moz-transition-timing-function: linear, ease-in;
+}
+
+.img-transition (@duration: 0.3s) {
+	transition-property: border-color;
+	transition-duration: @duration, @duration;
+	transition-timing-function: linear, ease-in;
+	-webkit-transition-property: border-color;
+	-webkit-transition-duration: @duration, @duration;
+	-webkit-transition-timing-function: linear, ease-in;
+	-o-transition-property: border-color;
+	-o-transition-duration: @duration, @duration;
+	-o-transition-timing-function: linear, ease-in;
+	-moz-transition-property: border-color;
+	-moz-transition-duration: @duration, @duration;
+	-moz-transition-timing-function: linear, ease-in;
+}
+
+.img-box-shadow (@color: hsla(0, 0%, 0%, 0.5) ) {
+	-o-box-shadow: @color 5px 5px 5px 0;
+	-webkit-box-shadow: @color 5px 5px 5px 0;
+    -moz-box-shadow: @color 5px 5px 5px 0;
+    box-shadow: @color 5px 5px 5px 0;
+}

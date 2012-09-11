@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>茶绘君 - 带你进入茶绘的世界！</title>
+		<meta name="description" content="基于Qt的茶绘软件">
+		<meta name="keywords" content="茶绘君, 茶绘, 绘图, 软件, 在线">
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/jquery.leanModal.min.js"></script>
+		<script src="js/jquery.smooth-scroll.min.js"></script>
+		<script src="js/lightbox.js"></script>
+		<link href="css/lightbox.css" rel="stylesheet" />
+		<link rel="stylesheet" media="all" href="css/icony.css">
+		<link rel="stylesheet" media="all" href="css/style.css"/>
+		<!--[if IE 6]>
+			<link rel="stylesheet" href="css/IE6.css" media="screen" />
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/IE7.css" media="screen" />
+			<link rel="stylesheet" href="css/icony-ie7.css" media="screen" />
+		<![endif]-->
+		<!--[if IE 8]>
+			<link rel="stylesheet" href="css/IE8.css" media="screen" />
+		<![endif]-->
+		<!--[if IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--<link rel="stylesheet" media="all" href="css/font.css"/>-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+	</head>
+	
+	<body lang="en">
+		<header id="header">
+				<ul id="header-nav">
+					<li>
+						<a id="download-a" class="smooth" href="#download">下载</a>
+					</li>
+					<li>
+						<a id="shot-a" href="#paint-shot">截图</a>
+					</li>
+					<li>
+						<a id="misspaint-a" href="#miss-paint">茶绘娘</a>
+					</li>
+					<li>
+						<a id="webpaint-a" href="#web-paint">网页版</a>
+					</li>
+					<li>
+						<a id="source-a" href="#paint-source">源代码</a>
+					</li>
+					<li>
+						<a href="#about" class="smooth">关于</a>
+					</li>
+				</ul>
+				<h1 id="site-title"><a id="site-title-a" href="http://mrspaint.com">茶绘君</a><sup id="version-sup">Alpha</sup></h1>
+				<h3 id="site-slogan">带你进入茶绘的世界！</h3>
+		</header>
+		<div id="wrapper">
+			<div id="container">
+				<div id="screen-shot">
+					<a href="images/茶绘君_boxart.png" rel="lightbox" title="茶绘君的界面">
+						<img alt="茶绘君的界面" src="images/茶绘君_thumb.png" title="茶绘君的界面">
+					</a>
+				</div>
+				<div class="article">
+					<h4 id="what-is-mrpaint"><i class="icon-user"></i>茶绘君是谁？</h4>
+					<p>茶绘君是一款能让你和你的朋友一起在线上绘画、享受创作的软件！</p>
+				</div>
+				<div class="article">
+					<h4 id="how-to-use"><i class="icon-book-open"></i>如何使用？</h4>
+					<p>在我们所支持的系统/平台上，只需下载对应的文件，双击即可！</p>
+				</div>
+				<div class="article">
+					<h4 id="download"><i class="icon-download"></i>下载</h4>
+					<p>猛戳这里！【其实还没放链接。。</p>
+				</div>
+				<div class="article">
+					<h4 id="about"><i class="icon-info-circle"></i>关于</h4>
+					<p>
+						<ul>
+							<li>茶绘君、茶绘娘由liuyanghejerry设计、编写，基于Qt框架。</li>
+							<li>本站由liuyanghejerry设计、编写，涉及框架/库：
+								<ul class="inner-ul">
+									<li>LESS</li>
+									<li>Less Framework 4</li>
+									<li>jQuery</li>
+									<li>leanModal</li>
+									<li>LightBox2</li>
+									<li>jQuery-Smooth-Scroll</li>
+									<li>jQuery UI</li>
+								</ul>
+							</li>
+							<li>本站所用的图标字体（Icon Fonts）均来自于<a href="http://fontello.com/">Fontello</a>
+							</li>
+							<li>本站的背景图片来自于搜索引擎，如果您是该图片的作者，请与我联系。</li>
+						</ul>
+					</p>
+					<p>我的联系方式：<a href="mailto:liuyanghejerry@126.com">liuyanghejerry@126.com</a></p>
+				</div>
+				<div class="article">
+					<h4 id="thanks"><i class="icon-lamp"></i>鸣谢</h4>
+					<p>
+						<ul>
+							<li>感谢各个软件框架/库作者的杰出作品</li>
+							<li>感谢roywillow同学不辞辛苦的测试并提出可行性方案</li>
+							<li>感谢米米、九九曲、xercafe、游乐、blaziken等同学参与测试</li>
+							<li>感谢xercafe同学承诺但还没有兑现的图标</li>
+						</ul>
+					</p>
+				</div>
+				<div class="article">
+					<h4 id="known-issues"><i class="icon-attention"></i>已知问题</h4>
+					<p>
+						<ul>
+							<li>多人同时在同一点绘画，各自看到的结果不同。</li>
+							<li>房间创建之后，不能自动加入。</li>
+						</ul>
+					</p>
+				</div>
+				<div class="article">
+					<h4 id="support"><i class="icon-gift"></i>求支持！！！</h4>
+					<p>因为代码、设计神马的都由我一个人完成，这基本上吃掉了我所有的业余时间。如果有可能的话，希望大家能考虑<a href="http://me.alipay.com/liuyanghejerry">【资助】</a>一下><。
+					</p>
+					<p>或者和你的朋友<a href="#share" class="smooth">【分享这个页面】</a>也算是精神上的支持呦！
+					</p>
+				</div>
+				<div class="article">
+					<h4 id="share"><i class="icon-share"></i>分享一下</h4>
+					<div id="share-wrapper">
+						<!-- JiaThis Button BEGIN -->
+						<div class="jiathis_style_32x32">
+						<a class="jiathis_button_qzone"></a>
+						<a class="jiathis_button_tsina"></a>
+						<a class="jiathis_button_tqq"></a>
+						<a class="jiathis_button_renren"></a>
+						<a class="jiathis_button_kaixin001"></a>
+						<a class="jiathis_button_douban"></a>
+						<a class="jiathis_button_xiaoyou"></a>
+						<a class="jiathis_button_fb"></a>
+						<a class="jiathis_button_googleplus"></a>
+						<a class="jiathis_button_twitter"></a>
+						<a class="jiathis_button_evernote"></a>
+						<a class="jiathis_button_delicious"></a>
+						<a href="http://www.jiathis.com/share?uid=1554190" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+						</div>
+						<script type="text/javascript" >
+						var jiathis_config={
+							data_track_clickback:true,
+							summary:"",
+							hideMore:false
+						}
+						</script>
+						<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1554190" charset="utf-8"></script>
+						<!-- JiaThis Button END -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="miss-paint" class="dialog">
+			<a class="dialog-close icon-cancel-circle" href="#"></a>
+			<h3>还没准备好！</h3>
+			<p>茶绘娘是茶绘君软件的服务端软件，她可以允许你创建自己的茶绘君服务器【私服神马的】</p>
+			<p>不过现在还没有准备好下载，敬请期待>< </p>
+		</div>
+		<div id="web-paint" class="dialog">
+			<a class="dialog-close icon-cancel-circle" href="#"></a>
+			<h3>还没准备好！</h3>
+			<p>网页版茶绘君是茶绘君软件的网页版本，这样就算只有一个好浏览器也可以享受茶绘！！</p>
+			<p>还在制作中呦，敬请期待>< </p>
+		</div>
+		<div id="paint-source" class="dialog">
+			<a class="dialog-close icon-cancel-circle" href="#"></a>
+			<h3>稍等哦</h3>
+			<p>我们就快要开源了！！</p>
+			<p>应该就在最近吧= = </p>
+		</div>
+		<div id="paint-shot" class="dialog">
+			<a class="dialog-close icon-cancel-circle" href="#"></a>
+			<h3>矮油</h3>
+			<p>不是就在右边嘛。。</p>
+		</div>
+		<div id="footer">
+			<span>Copyright © liuyanghejerry</span>
+			<div id="survey">
+				<script language="javascript" type="text/javascript" src="http://js.users.51.la/14939762.js">
+				</script>
+				<noscript>
+					<a href="http://www.51.la/?14939762" target="_blank">
+						<img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/14939762.asp" style="border:none" />
+					</a>
+				</noscript>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+			  $("#misspaint-a, #webpaint-a, #source-a, #shot-a").leanModal({"closeButton":".dialog-close"});
+			  $(".smooth").smoothScroll();
+			});
+		</script>
+	</body>
+</html>

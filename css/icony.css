@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'icony';
+  src: url("../font/icony.eot");
+  src: url("../font/icony.eot?#iefix") format('embedded-opentype'), url("../font/icony.woff") format('woff'), url("../font/icony.ttf") format('truetype'), url("../font/icony.svg#icony") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'icony';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity: 0.7;
+/* Uncomment for 3D effect */
+/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+/* fix buttons height */
+  line-height: 1em;
+/* you can be more comfortable with increased icons size */
+/* font-size: 120%; */
+}
+
+.icon-attention:before { content: '\26a0'; } /* '⚠' */
+.icon-ok:before { content: '\2713'; } /* '✓' */
+.icon-cancel-circle:before { content: '\2716'; } /* '✖' */
+.icon-info-circle:before { content: '\e705'; } /* '' */
+.icon-share:before { content: '\e73c'; } /* '' */
+.icon-gift:before { content: '🎁'; } /* '\1f381' */
+.icon-user:before { content: '👤'; } /* '\1f464' */
+.icon-lamp:before { content: '💡'; } /* '\1f4a1' */
+.icon-book-open:before { content: '📖'; } /* '\1f4d6' */
+.icon-download:before { content: '📥'; } /* '\1f4e5' */
