@@ -2,12 +2,15 @@
 
 
 .icon-attention:before { content: '\26a0'; } /* '⚠' */
-.icon-ok:before { content: '\2713'; } /* '✓' */
-.icon-cancel-circle:before { content: '\2716'; } /* '✖' */
-.icon-info-circle:before { content: '\e705'; } /* '' */
+.icon-cancel-circled:before { content: '\2716'; } /* '✖' */
+.icon-user:before { content: '\e013'; } /* '' */
+.icon-info-circled:before { content: '\e705'; } /* '' */
+.icon-chat:before { content: '\e720'; } /* '' */
+.icon-vcard:before { content: '\e722'; } /* '' */
 .icon-share:before { content: '\e73c'; } /* '' */
+.icon-chrome:before { content: '\e841'; } /* '' */
+.icon-github:before { content: '\f300'; } /* '' */
 .icon-gift:before { content: '🎁'; } /* '\1f381' */
-.icon-user:before { content: '👤'; } /* '\1f464' */
 .icon-lamp:before { content: '💡'; } /* '\1f4a1' */
 .icon-book-open:before { content: '📖'; } /* '\1f4d6' */
 .icon-download:before { content: '📥'; } /* '\1f4e5' */

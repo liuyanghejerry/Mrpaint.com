@@ -1,0 +1,184 @@
+{
+  "name": "icony",
+  "glyphs": [
+    {
+      "search": [
+        "attention",
+        "warning",
+        "alert"
+      ],
+      "code": 9888,
+      "from": 9888,
+      "uid": "97ac1a82370ae58f02e4ff1bdc58ee86",
+      "css": "attention",
+      "orig_css": "attention",
+      "orig_code": 9888,
+      "src": "websymbols"
+    },
+    {
+      "search": [
+        "close",
+        "cancel",
+        "reject"
+      ],
+      "code": 10006,
+      "uid": "c759418c008e9562944080fee617fc76",
+      "css": "cancel-circled",
+      "orig_css": "cancel-circled",
+      "orig_code": 10006,
+      "src": "entypo",
+      "from": 10006
+    },
+    {
+      "search": [
+        "profile",
+        "contact",
+        "user"
+      ],
+      "code": 57363,
+      "uid": "2c576f7c6c3233c31abad0899fc9f4af",
+      "css": "user",
+      "orig_css": "user",
+      "orig_code": 57363,
+      "src": "elusive",
+      "from": 57363
+    },
+    {
+      "search": [
+        "info"
+      ],
+      "code": 59141,
+      "uid": "7e4164950ffa4990961958b2d6318658",
+      "css": "info-circled",
+      "orig_css": "info-circled",
+      "orig_code": 59141,
+      "src": "entypo",
+      "from": 59141
+    },
+    {
+      "search": [
+        "chat",
+        "talk"
+      ],
+      "code": 59168,
+      "from": 59168,
+      "uid": "21f6a88daf13c62e5a70f5ef6ad9e23f",
+      "css": "chat",
+      "orig_css": "chat",
+      "orig_code": 59168,
+      "src": "websymbols"
+    },
+    {
+      "search": [
+        "contact",
+        "card",
+        "vcard"
+      ],
+      "code": 59170,
+      "uid": "457c8e2b305e7af74c1be4f07a01ca92",
+      "css": "vcard",
+      "orig_css": "vcard",
+      "orig_code": 59170,
+      "src": "entypo",
+      "from": 59170
+    },
+    {
+      "search": [
+        "share"
+      ],
+      "code": 59196,
+      "uid": "91426c82d94428a33353e495418435e3",
+      "css": "share",
+      "orig_css": "share",
+      "orig_code": 59196,
+      "src": "entypo",
+      "from": 59196
+    },
+    {
+      "search": [
+        "browser",
+        "chrome"
+      ],
+      "code": 59457,
+      "meta": {
+        "email": "berbentseva_angela@yahoo.com",
+        "author": "Angela Berbentseva"
+      },
+      "uid": "9c2b737b16ae2c8d66b7bfd29ba5ecd8",
+      "css": "chrome",
+      "orig_css": "chrome",
+      "orig_code": 59457,
+      "src": "fontelico",
+      "from": 59457
+    },
+    {
+      "search": [
+        "github",
+        "social",
+        "logo"
+      ],
+      "code": 62208,
+      "uid": "d94334f23acba022bfd68e49d76b31bb",
+      "css": "github",
+      "orig_css": "github",
+      "orig_code": 62208,
+      "src": "entypo",
+      "from": 62208
+    },
+    {
+      "search": [
+        "gift",
+        "present",
+        "package",
+        "box"
+      ],
+      "code": 127873,
+      "from": 127873,
+      "uid": "28f308aa0a07a67433f54c089c400d82",
+      "css": "gift",
+      "orig_css": "gift",
+      "orig_code": 127873,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "idea",
+        "lamp",
+        "light"
+      ],
+      "code": 128161,
+      "uid": "831e70448a066d4403a0bbd8ff0b8973",
+      "file": "lightbulb",
+      "css": "lamp",
+      "orig_css": "lamp",
+      "orig_code": 128161,
+      "src": "iconic",
+      "from": 128161
+    },
+    {
+      "search": [
+        "book",
+        "doc"
+      ],
+      "code": 128214,
+      "uid": "51727ca007aa35ceabcaffc28934faee",
+      "css": "book-open",
+      "orig_css": "book-open",
+      "orig_code": 128214,
+      "src": "entypo",
+      "from": 128214
+    },
+    {
+      "search": [
+        "download"
+      ],
+      "code": 128229,
+      "from": 128229,
+      "uid": "7yekfd0qlkgp6emwfbo10sjdmf8pewli",
+      "css": "download",
+      "orig_css": "download",
+      "orig_code": 128229,
+      "src": "typicons"
+    }
+  ]
+}
