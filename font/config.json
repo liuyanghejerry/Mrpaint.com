@@ -3,6 +3,18 @@
   "glyphs": [
     {
       "search": [
+        "weibo"
+      ],
+      "code": 74,
+      "uid": "3a171c02a5096c63c7c0e2e84d5eeb5a",
+      "css": "weibo",
+      "orig_css": "weibo",
+      "orig_code": 74,
+      "src": "zocial",
+      "from": 74
+    },
+    {
+      "search": [
         "attention",
         "warning",
         "alert"

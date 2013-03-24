@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'icony';
-  src: url("../font/icony.eot?71837103");
-  src: url("../font/icony.eot?71837103#iefix") format('embedded-opentype'), url("../font/icony.woff?71837103") format('woff'), url("../font/icony.ttf?71837103") format('truetype'), url("../font/icony.svg?71837103#icony") format('svg');
+  src: url("../font/icony.eot?80180848");
+  src: url("../font/icony.eot?80180848#iefix") format('embedded-opentype'), url("../font/icony.woff?80180848") format('woff'), url("../font/icony.ttf?80180848") format('truetype'), url("../font/icony.svg?80180848#icony") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +13,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icony';
-    src: url('../font/icony.svg?71837103#icony') format('svg');
+    src: url('../font/icony.svg?80180848#icony') format('svg');
   }
 }
 */
@@ -43,6 +43,7 @@
 /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.icon-weibo:before { content: '\4a'; } /* 'J' */
 .icon-attention:before { content: '\26a0'; } /* '⚠' */
 .icon-cancel-circled:before { content: '\2716'; } /* '✖' */
 .icon-user:before { content: '\e013'; } /* '' */

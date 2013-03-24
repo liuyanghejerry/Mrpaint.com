@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 
+.icon-weibo:before { content: '\4a'; } /* 'J' */
 .icon-attention:before { content: '\26a0'; } /* '⚠' */
 .icon-cancel-circled:before { content: '\2716'; } /* '✖' */
 .icon-user:before { content: '\e013'; } /* '' */
