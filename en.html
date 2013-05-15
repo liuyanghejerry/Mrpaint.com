@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Mr.Paint - To the world of paint-chat!</title>
+		<meta name="description" content="Paint-chat system based on Qt.">
+		<meta name="keywords" content="Mr.Paint, paint-chat, online painting, draw, software, online">
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/jquery.leanModal.min.js"></script>
+		<script src="js/jquery.smooth-scroll.min.js"></script>
+		<script src="js/lightbox.js"></script>
+		<link href="css/lightbox.css" rel="stylesheet" />
+		<link rel="stylesheet" media="all" href="css/icony.css">
+		<link rel="stylesheet" media="all" href="css/style-en.css"/>
+		<!--[if IE 6]>
+			<link rel="stylesheet" href="css/IE6.css" media="screen" />
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/IE7.css" media="screen" />
+			<link rel="stylesheet" href="css/icony-ie7.css" media="screen" />
+		<![endif]-->
+		<!--[if IE 8]>
+			<link rel="stylesheet" href="css/IE8.css" media="screen" />
+		<![endif]-->
+		<!--[if IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--<link rel="stylesheet" media="all" href="css/font.css"/>-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+	</head>
+	
+	<body lang="en">
+		<header id="header">
+				<ul id="header-nav">
+					<li>
+						<a id="download-a" class="smooth" href="#download">Download</a>
+					</li>
+					<li>
+						<a id="shot-a" href="#paint-shot">ScreenShot</a>
+					</li>
+					<li>
+						<a id="misspaint-a" href="#miss-paint">Miss.Paint</a>
+					</li>
+					<li>
+						<a id="webpaint-a" href="#web-paint">Web</a>
+					</li>
+					<li>
+						<a id="source-a" class="smooth" href="#source-code">Source</a>
+					</li>
+					<li>
+						<a href="#about" class="smooth">About</a>
+					</li>
+				</ul>
+				<h1 id="site-title"><a id="site-title-a" href="http://mrspaint.com">Mr.Paint</a><sup id="version-sup">Alpha</sup></h1>
+				<h3 id="site-slogan">To the world of paint-chat!</h3>
+		</header>
+		<div id="wrapper">
+			<div id="container">
+				<div id="screen-shot">
+					<a href="images/茶绘君_boxart.png" rel="lightbox" title="茶绘君的界面">
+						<img alt="茶绘君的界面" src="images/茶绘君_thumb.png" title="茶绘君的界面">
+					</a>
+				</div>
+				<div class="article">
+					<h4 id="what-is-mrpaint"><i class="icon-user"></i>Who is Mr.Paint</h4>
+					<p>Mr.Paint is a software let you and your friends draw together!</p>
+				</div>
+				<div class="article">
+					<h4 id="download"><i class="icon-download"></i>Download<span id="update-time">2013.5.10 updated</span></h4>
+					<p>
+						<ul>
+							<li><a href="http://mrspaint.oss.aliyuncs.com/%E8%8C%B6%E7%BB%98%E5%90%9B_Alpha_x86.zip">For Windows XP/Vista/7/8</a> [Under Tesing]
+							</li>
+							<li><a href="http://mrspaint.oss.aliyuncs.com/%E8%8C%B6%E7%BB%98%E5%90%9B.app.zip">Mac For OS X 10.7/10.8</a> [Under Tesing]
+							</li>
+						</ul>
+					</p>
+				</div>
+				<div class="article">
+					<h4 id="thanks"><i class="icon-lamp"></i>Thanks</h4>
+					<p>
+						<ul>
+							<li>Thanks to all contributors of libraries, frameworks used in Mr.Paint and this site.</li>
+							<li>Thanks <a href="http://www.appinn.com/">小众软件</a> for advertising.</li>
+							<li>Thanks roywillow for testing and suggestions.</li>
+							<li>Thanks 米米, 九九曲, xercafe, 游乐, blaziken, 空集, patchou, 十三三, Q胖 for testing.</li>
+						</ul>
+						<ul>Also thanks contributers for their donation (via alipay)：
+							<li>tra***@qq.com</li>
+							<li>149***@qq.com</li>
+							<li>hon***@163.com</li>
+							<li>342***@qq.com</li>
+							<li>wha***@126.com</li>
+							<li>876***@qq.com</li>
+							<li>138****1230</li>
+							<li>fux***@yahoo.cn</li>
+							<li>130****1943</li>
+							<li>z24***@hotmail.com</li>
+							<li>tia***@163.com</li>
+							<li>lie***@tom.com</li>
+							<li>wol***@yahoo.cn</li>
+							<li>139****9973</li>
+							<li>mai***@gmail.com</li>
+							<li>man***@outlook.com</li>
+							<li>luc***@msn.com</li>
+							<li>wql***@yahoo.com.cn</li>
+							<li>csc***@163.com</li>
+							<li><a href="#contact-me" class="smooth" >Contact us</a> if we omitted you!</li>
+						</ul>
+					</p>
+				</div>
+				<div class="article">
+					<h4 id="source-code"><i class="icon-github"></i>Source</h4>
+					<p>
+						<ul>
+							<li>Mr.Paint: <a href="https://github.com/liuyanghejerry/painttyWidget">Github</a></li>
+							<li>Miss.Paint: <a href="https://github.com/liuyanghejerry/painttyServer">Github</a></li>
+							<li>This site: <a href="https://github.com/liuyanghejerry/Mrpaint.com">Github</a></li>
+						</ul>
+					</p>
+				</div>
+				<div class="article">
+					<h4 id="contact-me"><i class="icon-vcard"></i>Contact us</h4>
+					<p>
+						<ul>
+							<li>Sina weibo: <a href="http://weibo.com/3196360644/">茶绘君他爹</a></li>
+							<li>Suggestions, discussions：<a href="http://tieba.baidu.com/f?kw=%B2%E8%BB%E6%BE%FD">茶绘君吧</a></li>
+							<li>Email：<a href="mailto:liuyanghejerry@126.com">liuyanghejerry@126.com</a></li>
+						</ul>
+					</p>
+				</div>
+				<div class="article">
+					<h4 id="about"><i class="icon-info-circled"></i>About</h4>
+					<p>
+						<ul>
+							<li>Mr.Paint credits:
+								<ul class="inner-ul">
+									<li>Designer: liuyanghejerry</li>
+									<li>Programer: liuyanghejerry</li>
+									<li>Programer: roywillow</li>
+									<li>Programer: HuangKangJing</li>
+									<li>Icon maker: xercafe</li>
+									<li>Icon maker: liuyanghejerry</li>
+								</ul>
+							</li>
+							<li>Miss.Paint credits:
+								<ul class="inner-ul">
+									<li>Designer: liuyanghejerry</li>
+									<li>Programer: liuyanghejerry</li>
+									<li>Programer: roywillow</li>
+								</ul>
+							</li>
+							<li>Website credits:
+								<ul class="inner-ul">
+									<li>Designer: liuyanghejerry</li>
+									<li>Programer: liuyanghejerry</li>
+									<li>Fonts: <a href="http://fontello.com/">Fontello</a></li>
+									<li><em>Background image is serached by Google. Contact me if you own it.</em></li>
+								</ul>
+							</li>
+						</ul>
+					</p>
+				</div>
+				<div class="article">
+					<h4 id="support"><i class="icon-gift"></i>Support</h4>
+					<p>Mr.Paint is created by myself and almost costs all my spare time. So please consider <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TSNVAK2QS35ZA">【support me】</a> if possible.
+					</p>
+					<p>Or, <a href="#share" class="smooth">【sharing this page】</a> with your friends!
+					</p>
+				</div>
+				<div class="article">
+					<h4 id="share"><i class="icon-share"></i>Share</h4>
+					<div id="share-wrapper">
+						<!-- JiaThis Button BEGIN -->
+						<div class="jiathis_style_32x32">
+						<a class="jiathis_button_twitter"></a>
+						<a class="jiathis_button_fb"></a>
+						<a class="jiathis_button_googleplus"></a>
+						<a class="jiathis_button_evernote"></a>
+						<a class="jiathis_button_delicious"></a>
+						<a class="jiathis_button_tsina"></a>
+						<a class="jiathis_button_renren"></a>
+						<a class="jiathis_button_tqq"></a>
+						<a class="jiathis_button_qzone"></a>
+						<a class="jiathis_button_kaixin001"></a>
+						<a class="jiathis_button_douban"></a>
+						<a class="jiathis_button_xiaoyou"></a>
+						<a href="http://www.jiathis.com/share?uid=1554190" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+						</div>
+						<script type="text/javascript" >
+						var jiathis_config={
+							data_track_clickback:true,
+							summary:"",
+							hideMore:false
+						}
+						</script>
+						<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1554190" charset="utf-8"></script>
+						<!-- JiaThis Button END -->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="miss-paint" class="dialog">
+			<a class="dialog-close icon-cancel-circled" href="#"></a>
+			<h3>Not Ready yet</h3>
+			<p>Miss.Paint is the server of Mr.Paint, which makes it possible to create your own Mr.Paint server.</p>
+			<p>However, it's not ready for public yet.</p>
+		</div>
+		<div id="web-paint" class="dialog">
+			<a class="dialog-close icon-cancel-circled" href="#"></a>
+			<h3>Not Ready yet</h3>
+			<p>Web version of Mr.Paint will let you drawing just in your browser.</p>
+			<p>However, it's not ready for public yet. </p>
+		</div>
+		<div id="paint-shot" class="dialog">
+			<a class="dialog-close icon-cancel-circled" href="#"></a>
+			<h3>Oops</h3>
+			<p>It's on the page already.</p>
+		</div>
+		<div id="footer">
+			<span>Copyright © liuyanghejerry</span>
+			<span>苏ICP备12058838号</span>
+			<div id="survey">
+				<script language="javascript" type="text/javascript" src="http://js.users.51.la/14939762.js">
+				</script>
+				<noscript>
+					<a href="http://www.51.la/?14939762" target="_blank">
+						<img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/14939762.asp" style="border:none" />
+					</a>
+				</noscript>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+			  $("#misspaint-a, #webpaint-a, #shot-a").leanModal({"closeButton":".dialog-close"});
+			  $(".smooth").smoothScroll();
+			});
+		</script>
+	</body>
+</html>
