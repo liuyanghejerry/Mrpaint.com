@@ -61,7 +61,7 @@
 		<div id="wrapper">
 			<div id="container">
 				<div id="happy-birthday" style="margin:20px auto;text-align: center;">
-					<h3>茶绘君因你而生——谨以此送给可爱的小九曲：生日快乐！</h3>
+					<h3>茶绘君因你而生——谨以此送给可爱的<a href="http://weibo.com/u/1913936637">小九曲</a>：生日快乐！</h3>
 					<h4 id="countdown-words">距离小九曲生日还有<span id="countdown-timer"></span></h4>
 					<script>
 					  $('#countdown-timer').countdown({
@@ -72,8 +72,8 @@
 		    			layout: '{dn}{dl}{hn}{hl}{mn}{ml}{sn}{sl}',
 		    			alwaysExpire: true,
 		    			onTick: function() {
-		    				var random_num = Math.floor(Math.random()*3);
-		    				if ( random_num%3 == 0 ) { return; };
+		    				var random_num = Math.floor(Math.random()*5)+1;
+		    				if ( random_num > 3 ) { return; };
 		    				var random_x = Math.floor(Math.random()*$('body').width())+120;
 		    				var cake = $('<img id="cake" style="z-index:999; position:absolute;top:'+0+'px; left:'+random_x+'px" src="images/birthday/cookie '+random_num+'.png">');
 		    				$('body').append(cake);
