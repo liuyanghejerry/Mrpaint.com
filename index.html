@@ -9,6 +9,9 @@
 		<script src="js/jquery.leanModal.min.js"></script>
 		<script src="js/jquery.smooth-scroll.min.js"></script>
 		<script src="js/lightbox.js"></script>
+		<script src="js/jquery.box2d.min.js"></script>
+		<script src="js/jquery-countdown/jquery.countdown.min.js"></script>
+		<!-- <link href="js/jquery-countdown/jquery.countdown.css" rel="stylesheet" /> -->
 		<link href="css/lightbox.css" rel="stylesheet" />
 		<link rel="stylesheet" media="all" href="css/icony.css">
 		<link rel="stylesheet" media="all" href="css/style.css"/>
@@ -57,6 +60,31 @@
 		</header>
 		<div id="wrapper">
 			<div id="container">
+				<div id="happy-birthday" style="margin:20px auto;text-align: center;">
+					<h3>茶绘君因你而生——谨以此送给可爱的小九曲：生日快乐！</h3>
+					<h4 id="countdown-words">距离小九曲生日还有<span id="countdown-timer"></span></h4>
+					<script>
+					  $('#countdown-timer').countdown({
+					  	labels: ['年', '月', '周', '天', '小时', '分', '秒'],
+					  	labels1: ['年', '月', '周', '天', '小时', '分', '秒'],
+					  	until: new Date(2013, 5, 9, 0, 0, 0) , 
+					  	timezone: -4,
+		    			layout: '{dn}{dl}{hn}{hl}{mn}{ml}{sn}{sl}',
+		    			alwaysExpire: true,
+		    			onTick: function() {
+		    				var random_num = Math.floor(Math.random()*3);
+		    				if ( random_num%3 == 0 ) { return; };
+		    				var random_x = Math.floor(Math.random()*$('body').width())+120;
+		    				var cake = $('<img id="cake" style="z-index:999; position:absolute;top:'+0+'px; left:'+random_x+'px" src="images/birthday/cookie '+random_num+'.png">');
+		    				$('body').append(cake);
+		    				cake.box2d({'y-velocity':5});
+		    			},
+		    			onExpiry: function() {
+		    				$('#countdown-words').text('闭上眼睛许个愿吧，我会为之祈祷。');
+		    			}
+		    		});
+					</script>
+				</div>
 				<div id="screen-shot">
 					<a href="images/茶绘君_boxart.png" rel="lightbox" title="茶绘君的界面">
 						<img alt="茶绘君的界面" src="images/茶绘君_thumb.png" title="茶绘君的界面">
