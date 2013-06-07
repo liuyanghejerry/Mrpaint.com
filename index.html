@@ -75,7 +75,7 @@
 		    				var random_num = Math.floor(Math.random()*5)+1;
 		    				if ( random_num > 3 ) { return; };
 		    				var random_x = Math.floor(Math.random()*$('body').width())+120;
-		    				var cake = $('<img id="cake" style="z-index:999; position:absolute;top:'+0+'px; left:'+random_x+'px" src="images/birthday/cookie '+random_num+'.png">');
+		    				var cake = $('<img class="cake" style="z-index:999; position:absolute;top:'+0+'px; left:'+random_x+'px" src="images/birthday/cookie '+random_num+'.png">');
 		    				$('body').append(cake);
 		    				cake.box2d({'y-velocity':5});
 		    			},
@@ -266,6 +266,9 @@
 			$(document).ready(function() {
 			  $("#misspaint-a, #webpaint-a, #shot-a").leanModal({"closeButton":".dialog-close"});
 			  $(".smooth").smoothScroll();
+			  setInterval(function(){
+			  	$('.cake').remove();
+			  }, 20000);
 			});
 		</script>
 	</body>
