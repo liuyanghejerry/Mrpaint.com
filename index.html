@@ -4,7 +4,7 @@
 		<meta charset="utf-8"/>
 		<title>茶绘君 - 带你进入茶绘的世界！</title>
 		<meta name="description" content="基于Qt的茶绘软件">
-		<meta name="keywords" content="茶绘君, 茶绘, 绘图, 软件, 在线">
+		<meta name="keywords" content="茶绘君 茶绘 绘图 协作 多人 在线">
 		<script src="js/jquery-1.7.2.min.js"></script>
 		<script src="js/jquery.leanModal.min.js"></script>
 		<script src="js/jquery.smooth-scroll.min.js"></script>
@@ -37,7 +37,7 @@
 						<a id="download-a" class="smooth" href="#download">下载</a>
 					</li>
 					<li>
-						<a id="shot-a" href="#paint-shot">截图</a>
+						<a id="shot-a" href="http://blog.mrspaint.com">博客</a>
 					</li>
 					<li>
 						<a id="misspaint-a" href="#miss-paint">茶绘娘</a>
@@ -217,11 +217,6 @@
 			<p>网页版茶绘君是茶绘君软件的网页版本，这样就算只有一个好浏览器也可以享受茶绘！！</p>
 			<p>还在制作中呦，敬请期待>< </p>
 		</div>
-		<div id="paint-shot" class="dialog">
-			<a class="dialog-close icon-cancel-circled" href="#"></a>
-			<h3>矮油</h3>
-			<p>不是就在右边嘛。。</p>
-		</div>
 		<div id="footer">
 			<span>Copyright © liuyanghejerry</span>
 			<span>苏ICP备12058838号</span>
@@ -237,7 +232,7 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-			  $("#misspaint-a, #webpaint-a, #shot-a").leanModal({"closeButton":".dialog-close"});
+			  $("#misspaint-a, #webpaint-a").leanModal({"closeButton":".dialog-close"});
 			  $(".smooth").smoothScroll();
 			});
 		</script>
