@@ -72,12 +72,9 @@
 					<h4 id="download"><i class="icon-download"></i>下载<span id="update-time">2014.3.3最后更新</span></h4>
 					<p>
 						<ul>
-							<li><a href="http://download.mrspaint.com/0.5/%E8%8C%B6%E7%BB%98%E5%90%9B_Alpha_x86_0.5.zip">Windows XP/Vista/7/8 x86 适用版</a>【测试中
-							</li>
-                            <li><a href="http://download.mrspaint.com/0.5/%E8%8C%B6%E7%BB%98%E5%90%9B_Alpha_x64_0.5.zip">Windows 7/8 x64 适用版</a>【测试中
-							</li>
-							<li><a href="http://download.mrspaint.com/0.5/%E8%8C%B6%E7%BB%98%E5%90%9B_Alpha_Mac_0.5.zip">Mac OS X 10.7/10.8 适用版</a>【测试中
-							</li>
+							<li><a href="http://download.mrspaint.com/0.5/%E8%8C%B6%E7%BB%98%E5%90%9B_Alpha_x86_0.5.zip">Windows XP/Vista/7/8 x86 适用版</a>【测试中</li>
+              <li><a href="http://download.mrspaint.com/0.5/%E8%8C%B6%E7%BB%98%E5%90%9B_Alpha_x64_0.5.zip">Windows 7/8 x64 适用版</a>【测试中</li>
+							<li><a href="http://download.mrspaint.com/0.5/%E8%8C%B6%E7%BB%98%E5%90%9B_Alpha_Mac_0.5.zip">Mac OS X 10.7/10.8 适用版</a>【测试中</li>
 						</ul>
 					</p>
 				</div>
@@ -186,7 +183,7 @@
 				</div>
 				<div class="article">
 					<h4 id="support"><i class="icon-gift"></i>求支持！！！</h4>
-					<p>因为代码、设计神马的有90%以上都由我一个人完成，这基本上吃掉了我所有的业余时间。服务器的全部费用也由我一人承担。如果有可能的话，希望大家能考虑<a href="http://me.alipay.com/liuyanghejerry">【资助】</a>一下><。
+					<p>因为代码、设计神马的有90%以上都由我一个人完成，这基本上吃掉了我所有的业余时间。服务器的全部费用也由我一人承担。如果有可能的话，希望大家能考虑<a id="donation-a" href="#donation">【资助】</a>一下><。
 					</p>
 					<p>或者和你的朋友<a href="#share" class="smooth">【分享这个页面】</a>也算是精神上的支持呦！
 					</p>
@@ -226,6 +223,13 @@
 			<p>网页版茶绘君是茶绘君软件的网页版本，这样就算只有一个好浏览器也可以享受茶绘！！</p>
 			<p>还在制作中呦，敬请期待>< </p>
 		</div>
+		<div id="donation" class="dialog">
+			<a class="dialog-close icon-cancel-circled" href="#"></a>
+			<h3>资助我</h3>
+			<p>目前可以接受【支付宝】资助。</p>
+			<p>收款账号：liuyanghejerry@126.com，收款人：刘洋河。</p>
+			<p>其它的资助方式，敬请期待>< </p>
+		</div>
 		<div id="footer">
 			<span>Copyright © liuyanghejerry</span>
 			<span>苏ICP备12058838号</span>
@@ -241,7 +245,7 @@
 		</div>
 		<script>
 			$(document).ready(function() {
-			  $("#misspaint-a, #webpaint-a").leanModal({"closeButton":".dialog-close"});
+			  $("#misspaint-a, #webpaint-a, #donation-a").leanModal({"closeButton":".dialog-close"});
 			  $(".smooth").smoothScroll();
 			});
 		</script>
